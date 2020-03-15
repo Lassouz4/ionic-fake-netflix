@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title></ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content no-padding>
+  <ion-row *ngFor="let filme of movies">
+
+    <div img-Filme>
+      <div img-center >
+      <img [src]="'https://image.tmdb.org/t/p/w780'+filme.backdrop_path" alt="imagem filme">
+    </div  >
+      <div class="Logo-breve"  margin-start>
+        <img src="../../assets/imgs/logo-netflix-2.png" alt="" />
+        Filme
+      </div>
+      <ion-title >{{filme.title}}</ion-title>
+
+      <ion-row row-Comming-btn>
+
+        <button color="light" text-capitalize="false" clear btn-Comming>
+          <ion-icon name="notifications"></ion-icon>
+          Receber aviso
+        </button>
+
+        <button color="light" text-capitalize="false" clear btn-Comming>
+          <ion-icon ios="ios-send" md="md-share"></ion-icon>
+          Compartilhe
+
+        </button>
+      </ion-row>
+      Estreia em {{filme.release_date}}
+
+
+
+      <ion-title justify-content-start>{{filme.title}}</ion-title>
+     
+
+      <p>{{filme.overview}}</p>
+      <p >{{getNameGener(filme)}}</p>
+    </div>
+
+  </ion-row>
+
+</ion-content>

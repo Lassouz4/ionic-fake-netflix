@@ -1,0 +1,29 @@
+<ion-header>
+    <img Logo-img src="../../assets/imgs/logo-netflix.png" />
+    <div text-end>
+      <ion-icon name="brush" (click)="editIcon()"></ion-icon>
+    </div>
+</ion-header>
+
+<ion-content padding>
+
+  <h2 text-center margin-top>Quem está assistindo?</h2>
+  <ion-card justify-content-center>
+    <ion-row padding flexcenter>
+      <ion-col col-6 *ngFor="let user of listProfiles" flexcenter class="col-profile">
+        <div class="image-profile" flexcenter >
+          <div [class]= "edited ? 'ion-show' : 'ion-hidden'" class="ion-icon">
+            <ion-icon flexcenter name="brush" (click)="editProfile(user)"></ion-icon>
+          </div>
+          <img (click)="goHome(user)" [src]="user.image">
+        </div>
+        <ion-title>{{user.name}}</ion-title>
+      </ion-col>
+
+      <ion-col col-6 flexcenter class="col-profile" padding>
+        <ion-icon name="md-add-circle" (click)="addUser()"></ion-icon>
+        <ion-title>Adicionar perfil</ion-title>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+</ion-content>

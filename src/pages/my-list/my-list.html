@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Minha Lista</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-row nowrap overflow-x padding>
+    <ion-col col-5 *ngFor="let movie of myList" >
+      <div>
+        <card-movie [movie]="movie"></card-movie>
+      </div>
+    </ion-col>
+  </ion-row>
+  
+</ion-content>

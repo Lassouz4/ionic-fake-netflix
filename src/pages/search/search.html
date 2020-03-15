@@ -1,0 +1,30 @@
+<ion-content>
+  <ion-grid>
+    <ion-row align-items-center>
+      <ion-col no-padding>
+        <ion-searchbar
+          [(ngModel)]="title"
+          padding-vertical
+          placeholder="Busque por série,filmes,genero,etc."
+          (ionChange)="search()"
+        >
+        </ion-searchbar>
+      </ion-col>
+      <ion-col no-padding col-1 align-left margin-end>
+        <button color="dark" ion-button >
+          <ion-icon color="light" name="mic" Font-h1></ion-icon>
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+<h1>Talvez você goste</h1>
+  <ion-list no-margin *ngFor="let movie of movies" >
+    <ion-item no-padding (click)="goDetail(movie)"  >
+      <ion-thumbnail no-margin item-start>
+        <img [src]="'https://image.tmdb.org/t/p/w154'+movie.poster_path"  />
+      </ion-thumbnail>
+      <h2>{{ movie.title }}</h2>
+      <ion-icon name="play" item-end padding padding-left></ion-icon>
+    </ion-item>
+  </ion-list>
+</ion-content>

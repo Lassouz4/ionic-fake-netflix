@@ -1,0 +1,42 @@
+page-comming-soon {
+  .button-ios {
+    height: 10px;
+  
+  }
+  [row-Comming-btn]{
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+  }
+  
+  [btn-Comming]{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background: transparent;
+    color: #fff;
+    text-align: center;
+    margin-top: 5px;
+    padding-left: 5px;
+  }
+
+  .Logo-breve {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    font-size: 8px;
+    height: 15px;
+    width: 15px;
+  }
+  .toolbar-title-ios {
+    text-align: start;
+}
+
+[img-center]{
+  display: flex;
+  justify-content: center;
+}
+
+}

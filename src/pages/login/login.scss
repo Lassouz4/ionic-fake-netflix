@@ -1,0 +1,55 @@
+page-login {
+  [Logo-img] {
+    width: 73px;
+    height: 49px;
+    padding-left: 7px;
+  }
+  
+  .Login-input {
+    border-radius: 8px;
+    border-bottom: 1px solid #e07904;
+  }
+  .item-md .item-block .item-inner {
+    border: none;
+  }
+  .item-md.item-input.ng-invalid.ng-touched:not(.input-has-focus):not(.item-input-has-focus) .item-inner{
+    border: none;
+    box-shadow: none;
+  }
+  [ion-button]{
+    color: white;
+  }
+
+  [background]{
+    background: transparent;
+  }
+
+  [p-style] {
+    font-size: 12px;
+    color: #e07904;
+    background: transparent;
+  }
+
+  [Line] {
+    display: flex;
+    align-items: center;
+  }
+  [P-check] {
+    padding-left: 5px;
+  }
+  [Check-left] {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  [Color-gray] {
+    color: rgb(140, 140, 140);
+  }
+
+  [Color-white] {
+    color: white;
+  }
+  
+ 
+}

@@ -1,0 +1,46 @@
+<ion-content >
+  <form [formGroup]="formProfile">
+    <ion-navbar hideBackButton no-padding >
+      <ion-row justify-content-between>
+        <ion-col color-btn-black  >
+          <button color-btn-black  (click)="cancelEdit()" ion-button clear>
+            <ion-icon padding name="close"></ion-icon>
+            <p>Cancelar</p>
+          </button>
+        </ion-col>
+
+
+        <ion-col border-left color-btn-black  >
+          <button (click)="submit()"
+          color="light"
+            ion-button
+            clear
+            [disabled]="!formProfile.valid"
+            type="submit"
+            item-end
+          >
+          <ion-icon padding name="checkmark"></ion-icon>
+            <p item-end >Salvar</p>
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-navbar>
+
+    <ion-list padding-horizontal>
+      <ion-item >
+        <ion-label stacked>NOME</ion-label>
+
+        <ion-input type="text" name="name" formControlName="name"></ion-input>
+      </ion-item>
+
+      <ion-item (click)="goAvatar()">
+        <ion-label>
+          Imagem
+        </ion-label>
+        <ion-thumbnail item-end>
+          <img [src]="user.image">
+        </ion-thumbnail>
+      </ion-item >
+    </ion-list>
+  </form>
+</ion-content>
