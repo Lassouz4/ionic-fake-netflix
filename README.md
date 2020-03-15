@@ -4,9 +4,10 @@ Projeto para criar uma fake NetFlix seguindo especificações de telas em Ionic 
 
 @Autores
 <a href="https://github.com/Karencostag">Karen Costa<a/>
-<a href="hhttps://github.com/Lassouz4">Laís Souza<a/>
+<a href="https://github.com/Lassouz4">Laís Souza<a/>
 <a href="https://github.com/LailaSantos">Laila Santos<a/>
-<a href="hhttps://github.com/LauraGilliane">Laura Gilianne<a/>
+  <a href="https://github.com/Rodrigues19">Larrisa Rodrigues<a/>
+<a href="https://github.com/LauraGilliane">Laura Gilianne<a/>
 <a href="#">José Luis<a/>
 
 #Versões Utilizadas
